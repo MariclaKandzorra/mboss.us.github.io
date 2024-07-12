@@ -1,0 +1,688 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Management of Fashion and Luxury Companies - Università Bocconi </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+   -webkit-print-color-adjust: exact;
+}
+* {
+   box-sizing: border-box;
+   -webkit-print-color-adjust: exact;
+}
+html,
+body {
+   margin: 0;
+   padding: 0;
+}
+@media only screen {
+   body {
+       margin: 2em auto;
+       max-width: 900px;
+       color: rgb(55, 53, 47);
+   }
+}
+
+body {
+   line-height: 1.5;
+   white-space: pre-wrap;
+}
+​
+a,
+
+a.visited {
+   color: inherit;
+   text-decoration: underline;
+}
+​
+.pdf-relative-link-path {
+   font-size: 80%;
+   color: #444;
+}
+​
+
+h1,
+h2,
+h3 {
+   letter-spacing: -0.01em;
+   line-height: 1.2;
+   font-weight: 600;
+   margin-bottom: 0;
+}
+.page-title {
+   font-size: 2.5rem;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 0.75em;
+}
+h1 {
+   font-size: 1.875rem;
+   margin-top: 1.875rem;
+}
+​
+h2 {
+   font-size: 1.5rem;
+   margin-top: 1.5rem;
+}
+​
+h3 {
+   font-size: 1.25rem;
+   margin-top: 1.25rem;
+}
+​
+.source {
+   border: 1px solid #ddd;
+   border-radius: 3px;
+   padding: 1.5em;
+   word-break: break-all;
+}
+​
+.callout {
+   border-radius: 3px;
+   padding: 1rem;
+}
+​
+figure {
+   margin: 1.25em 0;
+   page-break-inside: avoid;
+}
+​
+figcaption {
+
+}
+}
+
+@page {
+   margin: 1in;
+}
+.collection-content {
+   font-size: 0.875rem;
+}
+.column-list {
+   display: flex;
+   justify-content: space-between;
+}
+.column {
+   padding: 0 1em;
+}
+.column:first-child {
+   padding-left: 0;
+}
+.column:last-child {
+   padding-right: 0;
+}
+.table_of_contents-item {
+   display: block;
+   font-size: 0.875rem;
+   line-height: 1.3;
+   padding: 0.125rem;
+}
+.table_of_contents-indent-1 {
+   margin-left: 1.5rem;
+}
+.table_of_contents-indent-2 {
+   margin-left: 3rem;
+}
+.table_of_contents-indent-3 {
+  margin-left: 4.5rem;
+}
+.table_of_contents-link {
+
+    text-decoration: none;
+
+    opacity: 0.7;
+
+    border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+
+}
+
+​
+
+table,
+
+th,
+
+td {
+
+   border: 1px solid rgba(55, 53, 47, 0.09);
+   border-collapse: collapse;
+
+}
+
+​
+table {
+   border-left: none;
+   border-right: none;
+}
+​
+th,
+td {
+   font-weight: normal;
+   padding: 0.25em 0.5em;
+   line-height: 1.5;
+   min-height: 1.5em;
+   text-align: left;
+}
+​
+th {
+   color: rgba(55, 53, 47, 0.6);
+}
+ol,
+
+ul {
+   margin: 0;
+   margin-block-start: 0.6em;
+   margin-block-end: 0.6em;
+}
+​
+li > ol:first-child,
+li > ul:first-child {
+   margin-block-start: 0.6em;
+}
+​
+
+ul > li {
+   list-style: disc;
+}
+​
+ul.to-do-list {
+   padding-inline-start: 0;
+}
+​
+ul.to-do-list > li {
+   list-style: none;
+}
+​
+.to-do-children-checked {
+   text-decoration: line-through;
+   opacity: 0.375;
+}
+​
+ul.toggle > li {
+   list-style: none;
+}
+​
+ul {
+   padding-inline-start: 1.7em;
+}
+​
+
+ul > li {
+
+   padding-left: 0.1em;
+}
+​
+ol {
+   padding-inline-start: 1.6em;
+}
+​
+ol > li {
+   padding-left: 0.2em;
+}
+​
+.mono ol {
+   padding-inline-start: 2em;
+}
+​
+.mono ol > li {
+   text-indent: -0.4em;
+}
+​
+.toggle {
+   padding-inline-start: 0em;
+   list-style-type: none;
+}
+​
+/* Indent toggle children */
+.toggle > li > details {
+   padding-left: 1.7em;
+}
+​
+.toggle > li > details > summary {
+   margin-left: -1.1em;
+.toggle > li > details > summary {
+   margin-left: -1.1em;
+}
+​
+.selected-value {
+   display: inline-block;
+   padding: 0 0.5em;
+   background: rgba(206, 205, 202, 0.5);
+   border-radius: 3px;
+
+   margin-right: 0.5em;
+   margin-top: 0.3em;
+   margin-bottom: 0.3em;
+   white-space: nowrap;
+}
+​
+.collection-title {
+   display: inline-block;
+   margin-right: 1em;
+}
+​
+.page-description {
+   margin-bottom: 2em;
+}
+​
+.simple-table {
+
+  margin-top: 1em;
+   font-size: 0.875rem;
+   empty-cells: show;
+}
+.simple-table td {
+   height: 29px;
+   min-width: 120px;
+}
+​
+.simple-table th {
+   height: 29px;
+   min-width: 120px;
+}
+.simple-table-header-color {
+   background: rgb(247, 246, 243);
+   color: black;
+
+}
+.simple-table-header {
+   font-weight: 500;
+
+}
+​
+time {
+   opacity: 0.5;
+}
+​
+.icon {
+   display: inline-block;
+   max-width: 1.2em;
+   max-height: 1.2em;
+   text-decoration: none;
+   vertical-align: text-bottom;
+   margin-right: 0.5em;
+}
+​
+img.icon {
+   border-radius: 3px;
+}
+​
+.user-icon {
+   width: 1.5em;
+   height: 1.5em;
+   border-radius: 100%;
+   margin-right: 0.5rem;
+}
+​
+.user-icon-inner {
+
+    font-size: 0.8em;
+}
+
+.text-icon {
+   border: 1px solid #000;
+   text-align: center;
+}
+​
+.page-cover-image {
+   display: block;
+   object-fit: cover;
+   width: 100%;
+   max-height: 30vh;
+}
+​
+.page-header-icon {
+ font-size: 3rem;
+   margin-bottom: 1rem;
+}
+​
+.page-header-icon-with-cover {
+   margin-top: -0.72em;
+   margin-left: 0.07em;
+}
+​
+.page-header-icon img {
+
+  border-radius: 3px;
+}
+​
+.link-to-page {
+   margin: 1em 0;
+   padding: 0;
+   border: none;
+   font-weight: 500;
+}
+​
+p > .user {
+   opacity: 0.5;
+}
+​
+td > .user,
+td > time {
+
+   white-space: nowrap;
+}
+​
+input[type="checkbox"] {
+   transform: scale(1.5);
+
+    margin-right: 0.6em;
+   vertical-align: middle;
+
+}
+​
+​
+code {
+   color: #eb5757;
+}
+​
+.code {
+   padding: 1.5em 1em;
+}
+.code-wrap {
+   white-space: pre-wrap;
+   word-break: break-all;
+}
+​
+.code > code {
+   background: none;
+   padding: 0;
+   font-size: 100%;
+   color: inherit;
+}
+​
+blockquote {
+   font-size: 1.25em;
+   margin: 1em 0;
+   padding-left: 1em;
+   border-left: 3px solid rgb(55, 53, 47);
+}
+​
+.bookmark {
+   text-decoration: none;
+   max-height: 8em;
+   padding: 0;
+   display: flex;
+   width: 100%;
+ align-items: stretch;
+}
+​
+.bookmark-title {
+   font-size: 0.85em;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   height: 1.75em;
+   white-space: nowrap;
+}
+​
+.bookmark-text {
+   display: flex;
+   flex-direction: column;
+}
+​
+.bookmark-info {
+   flex: 4 1 180px;
+   padding: 12px 14px 14px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+​
+.bookmark-image {
+   width: 33%;
+   flex: 1 1 180px;
+   display: block;
+   position: relative;
+   object-fit: cover;
+
+   border-radius: 1px;
+}
+​
+.bookmark-description {
+   color: rgba(55, 53, 47, 0.6);
+   font-size: 0.75em;
+   overflow: hidden;
+   max-height: 4.5em;
+   word-break: break-word;
+}
+​
+.bookmark-href {
+   font-size: 0.75em;
+   margin-top: 0.25em;
+}
+​
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC';
+
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+
+    color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+
+    color: rgba(120, 119, 116, 1);
+
+    fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+
+    color: rgba(159, 107, 83, 1);
+
+    fill: rgba(159, 107, 83, 1);
+
+}
+.highlight-orange {
+
+    color: rgba(217, 115, 13, 1);
+
+    fill: rgba(217, 115, 13, 1);
+
+}
+.highlight-yellow {
+
+    color: rgba(203, 145, 47, 1);
+   fill: rgba(203, 145, 47, 1);
+}
+
+.highlight-teal {
+   color: rgba(68, 131, 97, 1);
+   fill: rgba(68, 131, 97, 1);
+}
+
+.highlight-blue {
+   color: rgba(51, 126, 169, 1);
+   fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+
+    color: rgba(144, 101, 176, 1);
+   fill: rgba(144, 101, 176, 1);
+}
+
+.highlight-pink {
+   color: rgba(193, 76, 138, 1);
+   fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+   color: rgba(212, 76, 71, 1);
+   fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+   background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+   background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+   background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+   background: rgba(251, 243, 219, 1);
+}
+
+.highlight-teal_background {
+   background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+   background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+   background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+   background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+   background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+   color: inherit;
+   fill: inherit;
+}
+
+.block-color-gray {
+
+    color: rgba(120, 119, 116, 1);
+   fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+   color: rgba(159, 107, 83, 1);
+   fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+   color: rgba(217, 115, 13, 1);
+   fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+   color: rgba(203, 145, 47, 1);
+   fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+   color: rgba(68, 131, 97, 1);
+   fill: rgba(68, 131, 97, 1);
+
+}
+.block-color-blue {
+   color: rgba(51, 126, 169, 1);
+   fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+   color: rgba(144, 101, 176, 1);
+   fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+
+    color: rgba(193, 76, 138, 1);
+   fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+   color: rgba(212, 76, 71, 1);
+   fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+   background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+   background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+   background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+   background: rgba(251, 243, 219, 1);
+}
+
+.block-color-teal_background {
+   background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+   background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+   background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+   background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+   background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+​
+.checkbox {
+   display: inline-flex;
+   vertical-align: text-bottom;
+   width: 16;
+   height: 16;
+   background-size: 16px;
+   margin-left: 2px;
+   margin-right: 5px;
+}
+.checkbox-on {
+   background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+.checkbox-off {
+   background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+</style></head>
+<body><article id="4427a115-9e3e-4025-a3f9-82e610804a21" class="page sans"><header><img class="page-cover-image" src="https://blog.whiteoff.de/wp-content/uploads/2018/01/Must-see_Mercedes_Restaurant_HD-1.jpg" style="object-position:center 50%"><h1 class="page-title">Management of Fashion and Luxury Companies - Università Bocconi </h1><p class="page-description"></p></header><div class="page-body"><h1 id="cc9eaf60-65d3-49dd-9a80-8aeeb76a64cf" class=""><strong>What communication codes do we share? - July 01, 2024</strong></h1><p id="85b35f25-e9ce-42d3-b033-b418ba967c07" class="">The Task:</p><blockquote id="e0042d30-1581-40b1-af08-9369072a3cdf" class="">Valentina Todoro<p id="1e1b7f7e-2d40-406c-a859-65c50fa952b4" class="">a month ago</p><h2 id="c955c767-96f2-43ac-98b5-80eb3bfc38d0" class=""><em><strong>About communication codes</strong></em></h2><p id="27a1b47d-0057-4215-8909-b5d35f5c9aa1" class="">We have just completed week four, and now things become more challenging! Ready?</p><h3 id="81095123-c50b-42c7-a815-1af30644dc14" class=""><em>Step 1: Think about the concept of Masstige (make sure you watched the dedicated video lecture).</em></h3><h3 id="6f2d2263-2d09-43a1-8a97-c0663e5ec453" class=""><em>Step 2: Choose an advertisement campaign of an industry DIFFERENT from the fashion and luxury one BUT that uses some of its communication codes (e.g. celebrities; top models; etc..)</em></h3><h3 id="5e3538db-a9f8-4526-8467-b69eefb690b0" class=""><em>Step 3. Take and upload a picture (taken by you) or an elaboration of existing pictures (e.g. a collage/set of images) that well represents the fashion communication codes used by the other industry you chose.</em></h3><p id="b53111c2-ac12-4025-9809-c770460675a7" class="">Don't forget your caption/explanation with your image, is very crucial here!</p><h3 id="efd68286-f9f6-47f0-80ba-1127ab107d03" class=""><strong>Few Little Rules</strong></h3><p id="ad99db5a-3b7c-4abd-a1ec-7882ec16c9b8" class="">Still the same as always.</p><p id="1e28864d-4ce4-47e4-bca6-0afec53d5229" class="">Good luck with this last activity.</p></blockquote><p id="fc4c0e67-d612-4ad7-87cd-a78f76b6c3f0" class="">
+</p><nav id="dbcf56f6-c296-40d8-ba64-7a4f73b7c5bb" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#cc9eaf60-65d3-49dd-9a80-8aeeb76a64cf"><strong>What communication codes do we share? - July 01, 2024</strong></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#bb32c847-3318-4183-982c-439da4a2b1aa"><strong>Masstige and the Mercedes-Benz: A Perfect Blend of Luxury and Accessibility</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#7aad5d84-2fe8-4b36-a243-d630e21d1de1"><strong>The Impact of Masstige on the Automotive Industry</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#80a9e56a-316f-4421-8060-b3192b5e5338"><strong>Mercedes-Benz: A Masstige Pioneer</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#71e0aea8-8eee-4f54-b527-7e1f312c4973"><strong>Storytelling Style</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#e4e1a9d3-10e3-42df-8d8e-cf63443c3361"><strong>Use of Irony</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1653eb69-3c9b-4f8c-9784-dd44c97f9ec2"><strong>Fusing Desire Without Direct Mention</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#7792fce5-1804-4923-bd9e-2a7daa29adb0"><strong>Creating a Visual Representation</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#fb5330d7-910e-4c2d-9d4f-e813695aa507"><strong>Conclusion</strong></a></div></nav><p id="78d1185a-6f3c-4485-bc64-e66f221124c1" class=""></p>
+<h2 class="title">READ THE REPORT</h2>
+<div class="section" style="background-color: #dde9ca;">
+<div class="container">
+<div class="text-center">
+<div style="position: relative; padding-top: max(60%,326px); height: 0; width: 100%;"><iframe style="position: absolute; border: none; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0;" src="https://youtu.be/a3ORVDPBsEY?si=-ZTCsFhvD8DFpZ-d"></iframe></div>
+</div>
+</div>
+</div>
+<p id="97882c14-7f6f-4da4-9df3-db158bc759d1" class="">Masstige has been embraced by various industries, including fashion, beauty, and automotive, where brands seek to democratize luxury.</p><p id="ddf5bd89-5fd7-48a3-b7bf-f813e26c1f53" class=""><a href="https://en.wikipedia.org/wiki/Masstige">These items are positioned between mid-market and high-end luxury, making them accessible to a broader audience while maintaining a sense of prestige</a>.</p><h2 id="7aad5d84-2fe8-4b36-a243-d630e21d1de1" class=""><strong>The Impact of Masstige on the Automotive Industry</strong></h2><p id="0bfb9735-e61d-4710-8d9d-710017e79b14" class="">The masstige strategy has significant implications for the automotive industry. By offering vehicles that combine luxury with affordability, brands like Mercedes-Benz can attract a diverse customer base.</p><p id="7b117db4-335a-4ffc-9331-20c5ed0e3764" class="">Mercedes-Benz, with its strategic positioning and innovative offerings, continues to lead the way in making luxury accessible to the masses.</p><h2 id="80a9e56a-316f-4421-8060-b3192b5e5338" class=""><strong>Mercedes-Benz: A Masstige Pioneer</strong></h2><p id="33d40dbd-4015-48a8-9c9c-a4ac27983ae6" class="">Mercedes-Benz, a brand synonymous with luxury and performance, has adeptly navigated the masstige market. The Mercedes-Benz “Grow Up” campaign epitomizes this blend of accessibility and prestige. Known for its engineering excellence and sophisticated design, Mercedes-Benz has expanded its lineup to include models that cater to a wider audience without compromising on quality. This shared Video is a fascinating case study in how fashion communication codes can be effectively utilized in the automotive industry. Let’s explore this by examining the campaign through the lens of fashion communication and identifying specific examples from the video. Let’s delve into the key elements that make this campaign, particularly this shared video, so compelling.</p><h2 id="71e0aea8-8eee-4f54-b527-7e1f312c4973" class=""><strong>Storytelling Style</strong></h2><p id="c1d71deb-167d-4a10-9b38-32a5d7e40527" class=""><strong>1. Relatable Narratives:</strong>&nbsp;The “Grow Up” campaign features a series of short films that depict real-life scenarios and challenges faced by Millennials as they transition into adulthood.&nbsp;<a href="https://www.marketing-interactive.com/mercedes-benz-grow-up-campaign-tapping-into-an-urban-subculture">These stories are authentic and relatable, touching on themes such as responsibility, relationships, and personal growth</a>. By focusing on these universal experiences, Mercedes-Benz creates an emotional connection with the audience.</p><p id="ddd0b710-5ca3-4683-9884-fa487a9291fd" class=""><strong>2. Emotional Connection:</strong>&nbsp;Fashion brands often create emotional connections with their audience by tapping into personal experiences and aspirations. The “Grow Up” campaign does this by focusing on relatable life moments and challenges faced by Millennials.&nbsp;<a href="https://news.europawire.eu/mercedes-benz-takes-new-approach-to-marketing-communication-with-campaign-grow-up-7654231456789/eu-press-release/2017/03/08/20/23/48/51509/">This approach fosters a deeper emotional engagement with the brand</a>.</p><p id="59ebb07a-317b-4223-9332-f422ec608819" class=""><strong>Example from the Video:</strong>&nbsp;The video portrays a young couple dealing with the ups and downs of their relationship, a theme that many viewers can relate to. The emotional journey is subtly linked to the Mercedes-Benz car, which becomes a symbol of stability and aspiration in their lives.</p><p id="f44277af-b64d-437c-a4bf-496d23f81982" class=""><strong>3. Visual Storytelling:</strong>&nbsp;Fashion communication often relies on strong visual storytelling to convey a brand’s message. The “Grow Up” campaign uses cinematic visuals to tell compelling stories about young adults navigating the complexities of growing up.&nbsp;<a href="https://news.europawire.eu/mercedes-benz-takes-new-approach-to-marketing-communication-with-campaign-grow-up-7654231456789/eu-press-release/2017/03/08/20/23/48/51509/">The high-quality production, natural lighting, and authentic settings create a visually appealing narrative that resonates with the audience</a>.</p><p id="1ae7dfe5-934c-4f52-afcd-e7dbcfb1bc66" class=""><strong>Example from the Video:</strong>&nbsp;In the video, we see scenes of urban life, stylish interiors, and dynamic cityscapes. These visuals are reminiscent of high-fashion editorials, where the environment and aesthetics play a crucial role in storytelling. The characters’ stylish clothing and the sleek design of the Mercedes-Benz car seamlessly blend into these settings, enhancing the overall narrative.</p><p id="69cb0a91-c310-4071-92e7-acbcf7dc3535" class=""><strong>4</strong><strong><a href="https://www.lbbonline.com/news/your-shot-diving-deeper-into-mercedes-benzs-compelling-grow-up-series/">. Cinematic Quality:&nbsp;The videos are shot with a cinematic quality that makes them feel more like mini-dramas than traditional advertisements</a></strong>. This approach not only enhances the storytelling but also elevates the brand’s image, aligning it with high-quality, engaging content.</p><p id="d37bc9df-46a6-4426-bd4f-152ef5786489" class=""><strong>5. Aspirational Imagery:</strong>&nbsp;Fashion communication frequently uses aspirational imagery to evoke a sense of desire. The “Grow Up” campaign employs this technique by showcasing characters who embody success, style, and modernity.&nbsp;<a href="https://www.marketing-interactive.com/mercedes-benz-grow-up-campaign-tapping-into-an-urban-subculture">The Mercedes-Benz car is positioned as an integral part of this aspirational lifestyle</a>.</p><p id="32f64173-51ff-447e-8b76-8de48f4e71f5" class=""><strong>Example from the Video:</strong>&nbsp;Throughout the video, the characters are shown in aspirational scenarios—driving through the city, attending social events, and enjoying moments of personal triumph. The car is always present, subtly reinforcing its role as a status symbol and a key element of their aspirational lifestyle.</p><p id="76419f68-e266-4829-b98b-59b67f6c41c5" class=""><strong>4. Subtle Branding:</strong>&nbsp;In fashion communication, subtle branding is often more effective than overt advertising.&nbsp;<a href="https://news.europawire.eu/mercedes-benz-takes-new-approach-to-marketing-communication-with-campaign-grow-up-7654231456789/eu-press-release/2017/03/08/20/23/48/51509/">The “Grow Up” campaign masterfully avoids direct mentions of the car model, instead allowing the narrative and visuals to create a desire for the product</a>.&nbsp;<a href="https://www.marketing-interactive.com/mercedes-benz-grow-up-campaign-tapping-into-an-urban-subculture">This technique allows the audience to immerse themselves in the story without feeling like they are being sold a product</a>).</p><p id="bf4d3326-11c2-405a-bf48-c9ee8e9e6902" class=""><strong>Example from the Video:</strong>&nbsp;The Mercedes-Benz car is featured prominently in the video, but its specific model is never mentioned. This subtle approach allows viewers to focus on the story and the emotions it evokes, while the car naturally integrates into the narrative as a desirable object.</p><h2 id="e4e1a9d3-10e3-42df-8d8e-cf63443c3361" class=""><strong>Use of Irony</strong></h2><p id="58bf5bc0-5fc2-4d6b-a813-4803030ac337" class=""><strong>1. Situational Irony:</strong>&nbsp;The campaign cleverly uses situational irony to highlight the contrast between the characters’ youthful aspirations and the realities of adulthood.&nbsp;<a href="https://www.marketing-interactive.com/mercedes-benz-grow-up-campaign-tapping-into-an-urban-subculture">For example, a character might be shown struggling with responsibilities that they once thought were easy or desirable</a>. This irony resonates with the audience, who can relate to the unexpected challenges of growing up.</p><p id="1cca47e4-14f1-4647-a7c8-ca31f32c4057" class=""><strong><a href="https://www.neuroscienceof.com/branding-blog/consumer-psychology-irony-marketing-ironic-consumption">2. Dramatic Irony:&nbsp;Dramatic irony is also at play, where the audience is aware of the underlying message or product being promoted, even though it is not explicitly mentioned</a></strong>. This creates a sense of anticipation and engagement, as viewers are drawn into the story while subconsciously recognizing the brand’s presence.</p><h2 id="1653eb69-3c9b-4f8c-9784-dd44c97f9ec2" class=""><strong>Fusing Desire Without Direct Mention</strong></h2><p id="9b30efa3-9727-4394-afcd-76f856f531eb" class=""><strong>1. Aspirational Imagery:</strong>&nbsp;The campaign uses aspirational imagery to evoke a sense of desire for the lifestyle associated with owning a Mercedes-Benz.&nbsp;<a href="https://www.marketing-interactive.com/mercedes-benz-grow-up-campaign-tapping-into-an-urban-subculture">The characters are often shown in stylish, urban settings, living dynamic and fulfilling lives</a>. This imagery subtly suggests that the car is a part of this desirable lifestyle.</p><p id="36ed2189-9bce-4c49-8285-0821a4afef0d" class=""><strong>2. Emotional Resonance:</strong>&nbsp;By focusing on the emotional journeys of the characters, the campaign taps into the audience’s own aspirations and desires.&nbsp;<a href="https://www.lbbonline.com/news/your-shot-diving-deeper-into-mercedes-benzs-compelling-grow-up-series/">The stories of personal growth and achievement create a positive association with the brand, making the audience more likely to aspire to own a Mercedes-Benz</a>.</p><p id="c4a60f0c-a15b-41f4-abbf-cfe244ba820c" class=""><strong>3. Implied Prestige:</strong>&nbsp;The absence of direct product mentions allows the brand to maintain an air of exclusivity and prestige.&nbsp;<a href="https://www.marketing-interactive.com/mercedes-benz-grow-up-campaign-tapping-into-an-urban-subculture">The audience is left to infer the connection between the characters’ successful, stylish lives and the Mercedes-Benz brand, enhancing its allure as a status symbol</a>.</p><h2 id="7792fce5-1804-4923-bd9e-2a7daa29adb0" class=""><strong>Creating a Visual Representation</strong></h2><p id="8bddc481-adf9-4a4f-9892-97001c3ec485" class="">To visually represent the fashion communication codes used in the “Grow Up” campaign, you could create a collage or set of images that highlight the following elements:</p><ol type="1" id="6ebe3f09-7738-42e2-8800-af1644fad7c0" class="numbered-list" start="1"><li><strong>Urban and Stylish Settings:</strong>&nbsp;Images of cityscapes, modern interiors, and fashionable locations.</li></ol><ol type="1" id="531951c9-6bd2-4d52-ba2d-fcfdb34a5275" class="numbered-list" start="2"><li><strong>Emotional Moments:</strong>&nbsp;Photos capturing genuine emotions and relatable life experiences.</li></ol><ol type="1" id="177cf2ef-8876-4daf-a0a3-d2bfaf9f3db3" class="numbered-list" start="3"><li><strong>Aspirational Scenarios:</strong>&nbsp;Pictures of stylish individuals in aspirational settings, such as social events or moments of personal achievement.</li></ol><ol type="1" id="7181d3d8-2598-4689-a1c8-8990bbc25e61" class="numbered-list" start="4"><li><strong>Subtle Product Placement:</strong>&nbsp;Images where the Mercedes-Benz car is present but not the focal point, blending seamlessly into the narrative.</li></ol><p id="d921cf00-35c0-4db7-87da-22d5c96b17ac" class="">By combining these elements, you can create a visual representation that effectively showcases how the “Grow Up” campaign uses fashion communication codes to engage and captivate its audience.</p><h2 id="fb5330d7-910e-4c2d-9d4f-e813695aa507" class=""><strong>Conclusion</strong></h2><p id="839bf560-f47a-40b4-8023-fab2ceb27039" class="">The Mercedes-Benz model in the video exemplifies the brand’s commitment to masstige. It offers advanced features, cutting-edge technology, and a sleek design, all while being priced competitively. This approach allows more consumers to experience the luxury and innovation that Mercedes-Benz is renowned for, without the premium price tag typically associated with the brand.</p><p id="9a43408d-0e1e-499a-92ef-bcd1197ff691" class="">The Mercedes-Benz “Grow Up” campaign is a masterclass in storytelling with a strong use of irony to engage and captivate its audience.</p><p id="8a4da092-31b8-4dda-ac36-6cc8c9131775" class="">
+</p><p id="4a62f380-8eb1-4d89-831c-1b5540f0a271" class="">
+</p><p id="45473917-59e4-4bcb-92f3-be984bfe96ca" class="">Footnotes: Copilot, 7/12/2024</p><p id="678467ba-74bf-4f04-83cb-27e29930598a" class="">(1) <a href="https://news.europawire.eu/mercedes-benz-takes-new-approach-to-marketing-communication-with-campaign-grow-up-7654231456789/eu-press-release/2017/03/08/20/23/48/51509/">Mercedes-Benz Takes New Approach to Marketing Communication with...</a></p><p id="33408724-4a69-4296-93e2-db80e21809b0" class="">(2) <a href="https://www.marketing-interactive.com/mercedes-benz-grow-up-campaign-tapping-into-an-urban-subculture">Mercedes-Benz 'Grow Up' campaign: Tapping into an urban subculture.</a>..</p><p id="f5ced68c-3002-447d-90a2-055375817a64" class="">(3) <a href="https://textilelearner.net/fashion-communication-types-trends/">Fashion Communication: Types, Trends, Strategies and Importance</a>...</p><p id="90344b9d-33f4-4a63-8ed9-5e4a45656d8d" class="">(4) <a href="http://ialsp.org/wp-content/uploads/2019/01/dress-code-and-intergroup.pdf">Oxford Research Encyclopedia of Communication - IALSP.</a></p><p id="a4043a04-79a1-4f0a-8d1d-14e618cb5f70" class="">(5) <a href="https://www.unep.org/resources/publication/sustainable-fashion-communication-playbook">The Sustainable Fashion Communication Playbook - UNEP</a>.</p><p id="4d6d9414-d0ba-4308-85cd-43e016448922" class="">(6) <a href="https://thisishatch.com/project/17">Mercedes-Benz Grow Up Campaign | Hatch Concept Studio.</a></p><p id="770b64db-e0e7-4249-861c-0a20f0849950" class="">
+</p><p id="e498b464-8156-4f74-8ebf-0eb25293dbe0" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
